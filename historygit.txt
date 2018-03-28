@@ -1,0 +1,7 @@
+1. Membuat Repository baru dengan Branch Default Master
+2. Membuat Branch baru dengan nama pageonecombobox sebagai halaman awal yang terdapat fitur menu combo box
+3. Membuat Branch baru dengan nama pagetwocombobox sebagai halaman kedua yang terdapat fitur calculator
+4. Membuat Branch baru dengan nama pagethreeRGB sebagai halaman ketiga yang terdapat fitur RGB
+5. Membuat Branch baru dengan nama pagefourRangkuman yang berisi rangkuman kuliah PPM dengan beberapa fitur (slider, panel, dll)
+6. Melakukan Merge Branch pagefourRangkuman pada branch Master
+7. Menambahkan file historygit.txt pada branch Master
