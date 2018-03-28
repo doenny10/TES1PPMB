@@ -28,7 +28,111 @@
 		<h1>Combo Box</h1>
 	</div>
 </div>
+<div data-role = page id = one data-title="Kalkulator" >
+	<div data-role = header>
+		<a href="#awal" data-icon = back data-transition = slide data-direction = reverse>Back</a>
+		<h1>Menu Satu</h1>
+	</div>
+	<div data-role = content>
+		
+	</div>
+	
+	<div data-role = content>
+		<h1> Calculator</h1>
+	<FORM NAME="Calc" data-position = right>
+	<TABLE BORDER = 1>
+		<TR>
+            <TD>
+                <INPUT TYPE="text" NAME="Input" Size="21">
+                <br>
+            </TD>
+        </TR>
+	</TABLE>
+    <TABLE BORDER = 5>
+        	<TR>
+            	<TD>
+                	<INPUT TYPE="button" NAME="one" VALUE=" 1 " OnClick="Calc.Input.value += '1'">
+                	<INPUT TYPE="button" NAME="two" VALUE=" 2 " OnCLick="Calc.Input.value += '2'">
+                	<INPUT TYPE="button" NAME="three" VALUE=" 3 " OnClick="Calc.Input.value += '3'">
+                	<INPUT TYPE="button" NAME="plus" VALUE=" + " OnClick="Calc.Input.value += ' + '">
+                	<br>
+                </TD>
+                <TD>
+                	<INPUT TYPE="button" NAME="four" VALUE=" 4 " OnClick="Calc.Input.value += '4'">
+                	<INPUT TYPE="button" NAME="five" VALUE=" 5 " OnCLick="Calc.Input.value += '5'">
+                	<INPUT TYPE="button" NAME="six" VALUE=" 6 " OnClick="Calc.Input.value += '6'">
+                	<INPUT TYPE="button" NAME="minus" VALUE=" - " OnClick="Calc.Input.value += ' - '">
+                	<br>
+                </TD>
+                <TD>
+                	<INPUT TYPE="button" NAME="seven" VALUE=" 7 " OnClick="Calc.Input.value += '7'">
+                	<INPUT TYPE="button" NAME="eight" VALUE=" 8 " OnCLick="Calc.Input.value += '8'">
+                	<INPUT TYPE="button" NAME="nine" VALUE=" 9 " OnClick="Calc.Input.value += '9'">
+                	<INPUT TYPE="button" NAME="times" VALUE=" x " OnClick="Calc.Input.value += ' * '">
+                	<br>
+                </TD>
+                <TD>
+                	<INPUT TYPE="button" NAME="clear" VALUE=" C " OnClick="Calc.Input.value = ''">
+                	<INPUT TYPE="button" NAME="zero" VALUE=" 0 " OnClick="Calc.Input.value += '0'">
+                	<INPUT TYPE="button" NAME="DoIt" VALUE=" = " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+                	<INPUT TYPE="button" NAME="div" VALUE=" / " OnClick="Calc.Input.value += ' / '">
+                	<br>
+            	</TD>
+        	</TR>
+    </TABLE>
+	</FORM>
+	</div>
 
+	<div data-role = footer data-position = fixed>
+		<h1>Kalkulator</h1>
+	</div>
+</div>
+
+<div data-role = page id = three data-title = Rangkuman>
+	<div data-role = header>
+		<a href="#awal" data-icon = back data-transition = slide data-direction = reverse>Back</a>
+		<h1>Menu Tiga</h1>
+	</div>
+
+	<div data-role = content>
+		<h3>Pemrograman Perangkat Mobile</h3>
+		<ul data-role = listview data-filter = true>
+			<li>GitHub</li>
+			<li>JQuery Mobile</li>
+			<li>Angular JS</li>
+		</ul>
+		<br><br>
+		<a href="#mypanel" data-role="button" data-theme = b>More Detail (Panel)</a>
+		<br>
+		<div data-role = "fieldcontain">
+			<label for = "quantity">Nilai  Akhir:</label>
+			<input type = "range" name = "quantity" id = "quantity" value = "0" min = "1" max = "100" data-highlight = "true">
+		</div>
+
+		<button class="show-page-loading-msg" data-theme="b" data-textonly="false" data-textvisible="true" data-msgtext="Loading ..." data-inline="true">Submit</button>
+		<button class="hide-page-loading-msg" data-inline="true" data-icon="delete">Cancel</button>
+	</div>
+
+	<div data-role = "panel" id = "mypanel" data-position = right data-display = "push">
+		<ul data-role = listview data-filter = true> 
+			<li data-role = list-divider>GitHub</li> 
+			<li>GitHub.com</li>
+			<li>TryGit</li>
+			<li>SmartGit</li>
+			<li data-role = list-divider>JQuery Mobile</li>
+			<li>Slider</li>
+			<li>Panel</li>
+			<li>ListView</li>
+			<li data-role = list-divider>Angular JS</li>
+			<li>Input</li>
+			<li>Output</li>
+			<li>Procces</li>
+		</ul>
+	</div>
+
+	<div data-role = footer data-position = fixed>
+		<h1>Rangkuman</h1>
+	</div>
 </div>
 </body>
 </html>
